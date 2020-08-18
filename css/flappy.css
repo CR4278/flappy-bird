@@ -3,6 +3,7 @@
     height: 600px;
     background-image: url(../images/sky.png);
     position: relative;
+    overflow: hidden;
 }
 .bird{
     position: absolute;
@@ -25,6 +26,7 @@
     line-height: 60px;
     text-align: center;
     font-weight: bolder;
+    transition: all .3s linear;
 }
 .start.start-blue{
     font-size: 36px;
@@ -41,6 +43,7 @@
     color: #fff;
     font-size: 20px;
     font-weight: bolder;
+    display: none;
 }
 .mask{
     position: absolute;
@@ -113,4 +116,17 @@
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
+}
+.pipe{
+    position: absolute;
+    width: 52px;
+}
+.pipe.pipeUp{
+    top: 0;
+    background-image: url(../images/pipe2.png);
+    background-position-y: bottom;
+}
+.pipe.pipeDown{
+    bottom: 0;
+    background-image: url(../images/pipe1.png);
 }
